@@ -5,12 +5,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }}:{% endif %} BLAIR RORANI</title>
+    <title>{% if page.title %}{{ page.title }}:{% endif %} FAMILY LAW SOLUTIONS</title>
 
     <!-- web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Dosis:400,600,700' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic' rel='stylesheet' type='text/css'>
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ page.description }}">
@@ -32,23 +30,56 @@
   </head>
 
   <body>
+    <header class="container">
+      <div class="row">
+        <div class="four columns">
+        <img src="/images/3784 Family Law Solutions Logo Black.png" alt="Family Law Solutions logo">
+        </div>
+      </div>
+    </header>
+    <nav class="container">
+      <ul>
+        <li><a ref="#fakelink">Welcome</a></li>
+        <li><a ref="#fakelink">Legal aid</a></li>
+        <li><a ref="#fakelink">Prices</a></li>
+        <li><a ref="#fakelink">Contact Details</a></li>
+        <li><a ref="#fakelink">Family justice system</a></li>
+      </ul>
+    </nav>
+
+    <div id="hero" style="border-top: 1px solid #bdc3c7; border-bottom: 1px solid #bdc3c7; padding: 15px 0; background: #ecf0f1;">
+      <div class="container">
+        <img src="/images/girl.png" alt="this is a girl" class="u-c-txt">
+      </div>
+    </div>
+
     <div id="main" class="container">
       {{ content }}
     </div>
 
-    <div class="row footer-links">
+    <!--<div class="row footer-links">
       <ul>
-        <li><a href="/all-posts">All posts</a></li>
         <li><a href="/about">About</a></li>
-        <li><a href="/follow">Follow me</a>
-        <li><a href="mailto:blair@rorani.com">Email</a></li>
+        <li><a href="mailto:brigham@familylawsolutions.conz">Email</a></li>
       </ul>
-    </div>
+    </div>-->
 
     <div class="wrapper-footer">
       <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <p>Physical Address:<br>
+            Level 1, 285 Lincoln Road, Addington</p>
+            <p>Postal Address:<br>
+            DX WX33342 Christchurch</p>
+          </div>
+          <div class="six columns">
+            <p>P: (03) 339 2233<br>F: (03) 339 2283</p>
+            <p><a href="mailto:brigham@familylawsolutions.conz">E: brigham@familylawsolutions.co.nz</a></p>
+          </div>
+        </div>
         <footer class="footer">
-          <p></p>Words and pictures &copy; Blair Rorani 2013-2015</p>
+          <p>Words and pictures &copy; {{ site.name }} 2014-2015</p>
         </footer>
       </div>
     </div>

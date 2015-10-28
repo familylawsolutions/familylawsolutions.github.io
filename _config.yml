@@ -14,8 +14,6 @@ description: Insert site description.
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
 
-# https://dl.dropboxusercontent.com/u/9514661/blair-rorani-profile-v10-white.png
-
 #
 # Flags below are optional
 #
@@ -81,4 +79,3 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
-    - CNAME
