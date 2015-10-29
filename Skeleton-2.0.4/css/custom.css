@@ -56,10 +56,16 @@ nav {
   }
 
 .contact-button {
-  float: right;
   margin-top: 15px;
+  text-align: center;
 }
 
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .contact-button {
+    float: right;
+  }
+}
 
 
 /* buttons */
