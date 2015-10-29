@@ -16,6 +16,14 @@ a {
     color: #229da3;
   }
 
+  a.long {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   #contact a {
     color: #fff;
   }
