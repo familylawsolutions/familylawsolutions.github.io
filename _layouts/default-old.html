@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }}:{% endif %} FAMILY LAW SOLUTIONS</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="{{ site.name }}" />
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- web fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/skeleton-2.0.4/css/normalize.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/skeleton-2.0.4/css/skeleton.css" />
+  <!--<link rel="stylesheet" href="{{ site.baseurl }}/skeleton/css/custom.css" />-->
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout -->
+  <div class="container">
+
+    <!-- header -->
+    <header>
+      <a href="/" class="no-border">
+        <img src="/images/3784 Family Law Solutions Logo Black.png" alt="Family Law Solutions logo" class="site-logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#fakelink">Profile</a></li>
+          <li><a href="#fakelink">Services</a></li>
+        </ul>
+      </nav>
+      <a class="button button-primary contact-button" href="#fakelink">Contact</a>
+    </header>
+  </div>
+
+  <div class="container" id="main-content">
+    {{ content }}
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <p>Physical Address:<br>
+          Level 1, 285 Lincoln Road, Addington</p>
+          <p>Postal Address:<br>
+          DX WX33342 Christchurch</p>
+        </div>
+        <div class="six columns">
+          <p>P: (03) 339 2233<br>F: (03) 339 2283</p>
+          <p><a href="mailto:brigham@familylawsolutions.conz">E: brigham@familylawsolutions.co.nz</a></p>
+        </div>
+      </div>
+      <p>Words and pictures &copy; {{ site.name }} 2014-2015</p>
+    </div>
+  </footer>
+
+<!-- End Document -->
+</body>
+</html>

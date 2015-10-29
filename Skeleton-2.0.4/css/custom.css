@@ -1,0 +1,113 @@
+/* custom styles */
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  padding-top: 10px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+a {
+  color: #29bcc4;
+}
+  a:hover {
+    color: #229da3;
+  }
+
+  #contact a {
+    color: #fff;
+  }
+    #contact a:hover {
+      color: #dedede;
+    }
+
+header {
+  padding: 15px;
+}
+
+.site-logo {
+  float: left;
+  max-width: 200px;
+}
+
+nav {
+  float: left;
+  display: none;
+  margin-top: 25px;
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 750px) {
+  nav {
+    display: inline;
+  }
+}
+
+  nav li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+.contact-button {
+  float: right;
+  margin-top: 15px;
+}
+
+
+
+/* buttons */
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #29bcc4;
+  border-color: #29bcc4; }
+
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #229da3;
+    border-color: #229da3; }
+
+
+
+/* sections */
+
+.hero {
+  background: url(/images/family-teal.jpg) center center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#services {
+  background: url(/images/family-black.jpg) center center;
+}
+
+#contact {
+  background: url(/images/map-grey.jpg) center center;
+}

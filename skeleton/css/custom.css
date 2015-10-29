@@ -1,21 +1,15 @@
 /* custom rules */
 
-.container {
-  max-width: 780px;
-}
-
-.post {
-  margin-bottom: 60px;
-}
-
-/* --- */
-
 body  {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 1.8em;
   color: #666;
-  padding-top: 60px;
+  padding-top: 15px;
 }
+
+
+
+/* headings */
 
 h1, h2, h3 {
   font-weight: 800;
@@ -36,13 +30,16 @@ h1 {
 
 h2 {
   color: #3498db;
-  margin-top: 60px;
 }
 
 h3 {
   color: #f1c40f;
   margin-top: 60px;
 }
+
+
+
+/* lists */
 
 li {
   list-style-position: outside;
@@ -57,18 +54,10 @@ li {
     margin-left: 45px;
   }
 
-.u-f-small {
-  font-size: 1.8rem;
-}
 
-@media (min-width: 550px) {
-  .entry, .content, article,
-  .u-f-big {
-    font-size: 2.4rem;
-  }
-}
 
 /* links */
+
 a:link, a:visited, a:active {
   color: #666;
   text-decoration: none;
@@ -85,8 +74,97 @@ a:hover {
 }
 
 
+
+/* header */
+
+header {
+  text-align: center;
+}
+  .site-logo {
+    padding: 5px 0px 15px 10px;
+    max-width: 300px;
+  }
+  .contact-button {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  header .site-logo {
+    text-align: left;
+    float: left;
+    max-width: 250px;
+  }
+  .contact-button {
+    float: right;
+  }
+}
+
+
+
+/* nav */
+
+nav {
+  clear: both;
+  text-align: center;
+  display: none;
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 750px) {
+  nav {
+    clear: none;
+    float: left;
+    display: inline;
+    padding-top: 20px;
+  }
+}
+
+nav ul {
+    padding-top: 15px;
+}
+
+nav li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 1000px) {
+  nav li {
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px
+
+  }
+}
+
+  nav li a {
+    color: #666;
+    border: none !important;
+  }
+
+    nav li a:hover {
+      background: #ecf0f1;
+      color: #666;
+    }
+
+
+
+/* layout */
+
+#main-content {
+  margin-top: 90px;
+}
+
+/* buttons */
+
 .button {
-  font-size: 18px;
+  font-size: 14px;
   white-space: normal;
   height: auto !important;
 }
@@ -103,26 +181,6 @@ a:hover {
   color: #2c3e50;
 }
 
-.consulting-btn {
-  text-align: center;
-}
-
-@media (min-width: 700px) {
-  .consulting-btn {
-    text-align: right;
-  }
-}
-
-.button-phablet {
-  display: none;
-  padding: 10px 15px;
-}
-
-@media (min-width: 550px) {
-  .button-phablet {
-    display: inline;
-  }
-}
 
 
 /* forms */
@@ -166,177 +224,15 @@ iframe {
   max-width: 100%;
 }
 
-iframe {margin-bottom: 30px;}
+iframe {
+  margin-bottom: 30px;
+}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
 }
 
-/* masthead */
-
-.wrapper-masthead {
-  margin-bottom: 90px;
-}
-.wrapper-masthead a:link {
-  border-bottom: none;
-}
-  .wrapper-masthead h1 {
-    text-transform: uppercase;
-  }
-/* avatar */
-
-.button-menu {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 90px;
-}
-
-.site-avatar {
-  float: none;
-  display: block;
-  margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  margin: 0 0 15px 0;
-}
-
-  @media (min-width: 550px) {
-    .site-avatar {
-
-    }
-  }
-
-  @media (min-width: 750px) {
-    .button-menu .site-avatar {
-
-      float: left;
-      display: inline;
-    }
-  }
-
-  @media (min-width: 1000px) {
-    .site-avatar {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  .site-avatar img {
-    border-radius: 50%;
-  }
-    a.site-avatar {
-      border: none;
-      }
-
-/* site info */
-.site-info {
-  float: none;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  }
-
-
-
-/* nav */
-
-nav {
-  text-align: center;
-  font-size: 2rem;
-}
-
-  nav ul {
-      margin: 15px 0 15px 0;
-  }
-
-    nav li {
-      display: inline;
-      padding-right: 15px;
-      margin-bottom: 0 !important;
-    }
-      nav li a {
-        padding: 10px;
-        color: #666;
-        border: none !important;
-      }
-
-        nav li a:hover {
-          background: #ecf0f1;
-          color: #666;
-        }
-
-
-  /*@media (min-width: 700px) {
-    nav {
-      float: right;
-      display: inline;
-      margin-top: 23px;
-      text-align: left;
-    }*/
-
-.welcome {
-  border-bottom: 1px solid #bdc3c7;
-  padding-bottom: 30px;
-  margin-bottom: 60px;
-}
-
-.entry,
-.content {
-  margin-bottom: 30px;
-}
-
-.author {
-  margin-bottom: 60px;
-  color: #2ecc71;
-}
-
-.about-blair {
-  border-top: 1px solid #bdc3c7;
-  padding-top: 60px;
-  margin-bottom: 30px;
-}
-
-.older-newer {
-  font-family: dosis, sans-serif;
-  font-size: 3.6rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-/* special grid */
-
-ul.special-grid {
-}
-
-  .special-grid li {
-    width: 250px;
-    height: 250px;
-    max-height: 250px;
-    padding: 15px;
-    list-style: none;
-    display:inline-block;
-      *display:inline; /*IE7*/
-      *zoom:1; /*IE7*/
-      text-align: left;
-  }
-
-  #main ul.special-grid li {
-    margin: 5px;
-    border: 3px solid #ecf0f1;
-  }
-
-  .special-grid img {
-    max-height: 150px;
-  }
-
-  .special-grid .hide-link {
-      border: none;
-  }
-
-  .special-grid a:hover.hide-link {
-      background: none;
-  }
 
 
 /* footer */
