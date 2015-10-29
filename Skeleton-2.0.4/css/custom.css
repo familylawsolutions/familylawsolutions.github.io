@@ -55,14 +55,16 @@ nav {
     text-decoration: none;
   }
 
+.a-button {
+  text-align: center;
+}
 .contact-button {
   margin-top: 15px;
-  text-align: center;
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-  .contact-button {
+  .a-button {
     float: right;
   }
 }
