@@ -1,11 +1,11 @@
 /* custom styles */
 
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'calibri', helvetica, arial, sans-serif;
   padding-top: 10px;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
   font-weight: 700;
 }
 
@@ -108,7 +108,7 @@ input[type="button"].button-primary {
 /* sections */
 
 .hero {
-  background: url(/images/family-teal.jpg) center center;
+  background: url(/images/family-teal.jpg) center -200px;
   padding-top: 120px;
   padding-bottom: 120px;
   color: #fff;
@@ -126,4 +126,14 @@ section {
 
 #contact {
   background: url(/images/map-grey.jpg) center center;
+}
+
+.space-me {
+  margin-bottom: 30px
+}
+
+@media (min-width: 1000px) {
+  .space-me {
+    margin-bottom: 0px
+  }
 }
