@@ -108,7 +108,7 @@ input[type="button"].button-primary {
 /* sections */
 
 .hero {
-  background: url(/images/family-teal.jpg) center -200px;
+  background: url(/images/family-teal.jpg) -450px -200px;
   padding-top: 120px;
   padding-bottom: 120px;
   color: #fff;
