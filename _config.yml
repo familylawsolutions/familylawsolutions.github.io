@@ -49,15 +49,15 @@ url: http://familylawsolutions.co.nz
 baseurl: ""
 
 # pagination
-paginate: 1
-paginate_path: "/:num/"
+# paginate: 1
+# paginate_path: "/:num/"
 
 
 #
 # !! You don't need to change any of the configuration flags below !!
 #
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 permalink: /:title/
 
