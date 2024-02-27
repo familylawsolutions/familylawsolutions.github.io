@@ -68,7 +68,7 @@ header {
 nav {
   float: right;
   display: none;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 /* Larger than phablet (also point when grid becomes active) */
