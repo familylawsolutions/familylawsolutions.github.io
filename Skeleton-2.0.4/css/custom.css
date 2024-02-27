@@ -3,14 +3,34 @@
 body {
   font-family: 'calibri', helvetica, arial, sans-serif;
   padding-top: 10px;
+  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: 700;
 }
 
+h4, h5 {
+  font-weight: 600;
+}
+
+.profile h5 {
+  margin-bottom: 0.5rem;
+}
+
+h2 {letter-spacing: normal; }
+
+.role {
+  color: #888; /* Or any shade of grey you prefer */
+  margin-bottom: 2rem !important;
+}
+
 p {
-  margin-top: 20px; }
+  margin-top: 0px; }
+
+.caption {
+  color: #aaa;
+}
 
 a {
   color: #29bcc4;
@@ -141,4 +161,23 @@ section {
   .space-me {
     margin-bottom: 0px
   }
+}
+
+
+/* images */
+.profile-pic {
+  border-radius: 0%;
+}
+
+.boxes {
+  ul {
+    list-style-type: none; /* Remove default bullet */
+}
+
+ul li::before {
+    content: "\2022"; /* Unicode character for bullet (●) */
+    color: #29bcc4; /* Your desired color */
+    font-size: larger; /* Adjust size if needed */
+    margin-right: 0.5em; /* Adjust spacing between bullet and text */
+}
 }
