@@ -133,11 +133,15 @@ input[type="button"].button-primary {
 /* sections */
 
 .hero {
-  background: url(/images/family-teal.jpg) -450px -200px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  background: url(/images/team-bg.png);
+  background-size: cover; /* Adjust as needed */
+  background-position: center center;
   color: #fff;
   text-align: center;
+  height: 600px;
+  display: flex; /* Add flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 section {
@@ -172,14 +176,15 @@ section {
 .boxes {
   ul {
     list-style-type: none; /* Remove default bullet */
-}
+    padding-left: 0; /* Remove default padding */
 
-ul
-
-ul li::before {
-    content: "\2022"; /* Unicode character for bullet (●) */
-    color: #29bcc4; /* Your desired color */
-    font-size: larger; /* Adjust size if needed */
-    margin-right: 0.5em; /* Adjust spacing between bullet and text */
-}
+    li {
+      &::before {
+        content: "\2022"; /* Unicode character for bullet (●) */
+        color: #29bcc4; /* Your desired color */
+        font-size: larger; /* Adjust size if needed */
+        margin-right: 0.5em; /* Adjust spacing between bullet and text */
+      }
+    }
+  }
 }
